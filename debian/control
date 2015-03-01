@@ -1,0 +1,13 @@
+Source: eyepi-ssh-config
+Section: admin
+Priority: important
+Maintainer: Bruno Maitre <bruno.maitre@gmail.com>
+Build-Depends: debhelper (>= 7.0.0~), config-package-dev (>= 5.0), ssh
+Standards-Version: 3.9.2
+
+Package: eyepi-ssh-config
+Architecture: all
+Depends: ${misc:Depends}, ssh
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Eye Pi ssh configuration
